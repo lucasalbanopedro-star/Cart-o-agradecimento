@@ -6,100 +6,98 @@
 }
 
 body {
-    background: #f6f6f6; /* fundo claro igual à arte */
-    color: #222;         /* texto escuro suave */
+    background: #f6f6f6;
+    color: #222;
     font-family: "Inter", Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
+    padding: 30px 0;
 }
 
-/* Card – retangular */
-.card {
-    width: 90%;
-    max-width: 700px;
+/* Card vertical estilo story */
+.card.vertical {
+    width: 100%;
+    max-width: 430px;      /* tamanho ideal para celulares */
+    height: auto;
     background: #ffffff;
-    border: 2px solid #ff66b3; /* rosa do IOT */
-    padding: 30px;
-    border-radius: 0px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 3px solid #ff66b3;
+    padding: 45px 35px;
+    border-radius: 22px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Header */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 35px;
 }
 
-/* Logo retangular */
 .logo {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #ffffff, #ffffff); /* azul-marinho da beca */
+    width: 80px;
+    height: 80px;
+    background: #000;
+    color: #fff;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 0px;
+    align-items: center;
     font-family: Consolas, monospace;
-    font-weight: bold;
-    font-size: 20px;
-    color:black; /* dourado da beca */
+    font-size: 28px;
+    border-radius: 10px;
 }
 
-/* Título */
 h1 {
-    font-size: 22px;
-    color: #ff4fa6; /* pink do texto IOT */
+    margin-top: 20px;
+    font-size: 28px;
+    color: #ff4fa6;
 }
 
 /* Texto */
 .intro {
-    margin: 10px 0;
-    color: #444; /* cinza escuro suave */
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    text-align: center;
 }
 
 /* Bloco de código */
 .code-block {
-    background: #fff0f7; /* leve rosado */
+    background: #fff0f7;
     border: 1px solid #ff66b3;
-    padding: 15px;
-    border-radius: 0px;
-    margin: 15px 0;
+    padding: 20px;
+    margin: 25px 0;
     font-family: Consolas, monospace;
-    font-size: 14px;
-    color: #222;
+    font-size: 16px;
     white-space: pre-wrap;
+    border-radius: 12px;
 }
 
 /* Lista */
 .tasks {
-    margin-top: 15px;
     list-style: none;
-    padding-left: 15px;
+    margin-top: 10px;
+    padding: 0;
 }
 
 .tasks li {
-    padding: 6px 0;
+    padding: 12px 0;
+    font-size: 18px;
     font-family: Consolas, monospace;
+    line-height: 1.5;
 }
 
 .tasks li span {
-    background: #ffe0ef; /* rosa claro */
+    background: #ffe0ef;
     padding: 4px 8px;
-    border-radius: 3px;
-    color: #ff4fa6; /* pink */
+    border-radius: 5px;
+    color: #ff4fa6;
 }
 
 /* Footer */
 footer {
-    margin-top: 20px;
+    margin-top: 35px;
     text-align: center;
+    padding-top: 15px;
     border-top: 2px solid #ff66b3;
-    padding-top: 10px;
-    color: #444;
+    font-size: 18px;
 }
